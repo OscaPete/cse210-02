@@ -1,15 +1,15 @@
-from gameplay.cards import cards
+from Gameplay.Cards import Cards
 
 point_limit = 1000
 
 
-class thrower:
+class Conductor:
 
     """This class in meant to organize the game"""
 
-    def hilo(self):
+    def __init__(self):
 
-        self.cards = cards()
+        self.cards = Cards()
         self.play = False
         self.score = 0
         self.fist_card = 0
