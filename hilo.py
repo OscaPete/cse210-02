@@ -1,4 +1,4 @@
-from gameplay.conductor import Conductor
+from gameplay.conductor import conductor
 
-game = Conductor()
+game = conductor()
 game.start()
