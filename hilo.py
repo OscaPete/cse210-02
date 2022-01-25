@@ -1,4 +1,4 @@
-from gameplay.conductor import conductor
+from gameplay.conductor import thrower      # Instead of "import conductor", used "import thrower" ~AB
 
-game = conductor()
+game = thrower() # changed to "thrower()" instead of "conductor()"
 game.start()
