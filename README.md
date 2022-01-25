@@ -10,7 +10,7 @@ Hilo Card Game is a simple guessing game. The computer will choose 2 random valu
 - The player enters a number between 1-13
 - If the player guesses correctly he gains 100
 - If he guesses wrong, he loses 75 points. 
-- The game continues until the player has 0 points.
+- The game continues until the player has 0 points (loss) or reaches 1000 points (win).
 
 ## Required Technologies
 ---
