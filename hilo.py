@@ -1,4 +1,5 @@
-from Gameplay.Conductor import Conductor
+# Instead of "import conductor", used "import thrower" ~AB
+from Gameplay.conductor import thrower
 
-Game = Conductor()
-Game.start()
+game = thrower()  # changed to "thrower()" instead of "conductor()"
+game.start()
