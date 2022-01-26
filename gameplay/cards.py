@@ -1,10 +1,10 @@
 import random
 
 
-class Cards:
+class cards:
     """ This class is meant to generate random cards"""
 
-    def __init__(self):
+    def hilo(self):
         pass
 
     def draw(self):

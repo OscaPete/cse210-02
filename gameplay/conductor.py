@@ -1,15 +1,15 @@
-from Gameplay.Cards import Cards
+from gameplay.cards import cards
 
 point_limit = 1000
 
 
-class Conductor:
+class thrower:
 
     """This class in meant to organize the game"""
 
-    def __init__(self):
+    def hilo(self):
 
-        self.cards = Cards()
+        self.cards = cards()
         self.play = False
         self.score = 0
         self.fist_card = 0
@@ -48,7 +48,7 @@ class Conductor:
 
     def do_logic(self):
         "This function keeps track of the score"
-        
+
         # ...and here ~AB
         if self.guess == "l":
             if self.next_card <= self.first_card:
@@ -57,7 +57,8 @@ class Conductor:
                 self.playerpoints -= 75
         elif self.guess == "h":
             if self.next_card >= self.first_card:
-                self.playerpoints += 100                # minor mistake, from player_points to playerpoints ~AB
+                # minor mistake, from player_points to playerpoints ~AB
+                self.playerpoints += 100
             else:
                 self.playerpoints -= 75
         elif self.playerpoints < 75:                    # similar as above.
